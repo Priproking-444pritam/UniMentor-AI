@@ -1,24 +1,26 @@
 """
 UniMentor AI - Configuration
 ============================
-Loads the Groq API key from the .env file and stores
-all application-level constants in one place.
+Loads the Groq API key and stores all application-level
+constants in one place.
+
+The key is read from Streamlit secrets when deployed and
+from the .env file when running locally.
 """
 
 import os
+
 from dotenv import load_dotenv
 
 load_dotenv()
+
 
 # ============================================================
 # API CONFIGURATION
 # ============================================================
 
 def _get_api_key():
-    """
-    Read the key from Streamlit secrets when deployed,
-    falling back to the .env file when running locally.
-    """
+    """Return the Groq API key from .env or Streamlit secrets."""
     key = os.getenv("GROQ_API_KEY")
 
     if key:
@@ -27,11 +29,17 @@ def _get_api_key():
     try:
         import streamlit as st
         return st.secrets["GROQ_API_KEY"]
+
     except Exception:
         return None
 
 
 GROQ_API_KEY = _get_api_key()
+
+MODEL = "llama-3.3-70b-versatile"
+
+EMBEDDING_MODEL = "all-MiniLM-L6-v2"
+
 
 # ============================================================
 # RETRIEVAL CONFIGURATION
@@ -50,6 +58,7 @@ DOCUMENTS_FOLDER = os.path.join(
     os.path.dirname(os.path.abspath(__file__)),
     "documents",
 )
+
 
 # ============================================================
 # DEPARTMENTS / AGENTS
@@ -81,12 +90,13 @@ NOT_FOUND_MESSAGE = (
     "office or your faculty advisor."
 )
 
+
 # ============================================================
 # VALIDATION
 # ============================================================
 
 if not GROQ_API_KEY:
     raise ValueError(
-        "GROQ_API_KEY is missing. Create a .env file and add:\n"
-        "GROQ_API_KEY=your_groq_api_key_here"
+        "GROQ_API_KEY is missing. Add it to the .env file locally, "
+        "or to Secrets in Streamlit Cloud settings."
     )
