@@ -14,11 +14,24 @@ load_dotenv()
 # API CONFIGURATION
 # ============================================================
 
-GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+def _get_api_key():
+    """
+    Read the key from Streamlit secrets when deployed,
+    falling back to the .env file when running locally.
+    """
+    key = os.getenv("GROQ_API_KEY")
 
-MODEL = "llama-3.3-70b-versatile"
+    if key:
+        return key
 
-EMBEDDING_MODEL = "all-MiniLM-L6-v2"
+    try:
+        import streamlit as st
+        return st.secrets["GROQ_API_KEY"]
+    except Exception:
+        return None
+
+
+GROQ_API_KEY = _get_api_key()
 
 # ============================================================
 # RETRIEVAL CONFIGURATION
