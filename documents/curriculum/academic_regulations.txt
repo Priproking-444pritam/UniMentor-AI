@@ -1,0 +1,72 @@
+UNIVERSITY ACADEMIC REGULATIONS - B.TECH COMPUTER SCIENCE AND ENGINEERING
+
+1. PROGRAMME STRUCTURE
+The B.Tech programme is of four years duration, divided into eight semesters.
+A student must earn a total of 160 credits to be awarded the degree.
+The credit distribution is as follows:
+- Core Engineering Courses: 92 credits
+- Professional Electives: 18 credits
+- Open Electives: 12 credits
+- Laboratory and Practical Courses: 22 credits
+- Project Work and Internship: 16 credits
+
+2. CREDIT SYSTEM
+One lecture hour per week is equal to one credit.
+One tutorial hour per week is equal to one credit.
+Two laboratory hours per week are equal to one credit.
+
+3. ATTENDANCE REQUIREMENT
+A student must maintain a minimum of 75 percent attendance in every
+registered course to be permitted to appear in the end semester examination.
+A student with attendance between 65 and 75 percent may apply to the Dean
+for condonation with valid medical documents. Attendance below 65 percent
+carries no provision for condonation and the student must repeat the course.
+
+4. EVALUATION AND GRADING
+Internal assessment carries 50 marks and the end semester examination
+carries 50 marks. The internal assessment is divided into Mid Semester
+Examination (30 marks), Quizzes (10 marks) and Assignments (10 marks).
+
+Letter grades and grade points:
+O = 10 points, marks 90 and above
+E = 9 points, marks 80 to 89
+A = 8 points, marks 70 to 79
+B = 7 points, marks 60 to 69
+C = 6 points, marks 50 to 59
+D = 5 points, marks 40 to 49
+F = 0 points, marks below 40 (Fail)
+
+A student must score a minimum of 40 percent in aggregate and a minimum of
+30 percent in the end semester examination to pass a course.
+
+5. BACKLOG AND RE-EXAMINATION
+A student who fails a course is permitted to appear in the supplementary
+examination held at the end of the following semester. A maximum of four
+attempts is permitted per course. A student carrying more than six backlogs
+at the end of the fourth semester is not permitted to register for
+seventh semester courses.
+
+6. PROFESSIONAL ELECTIVES FOR CSE
+Professional electives are offered from the fifth semester onwards.
+Each professional elective carries 3 credits. A student must complete six
+professional electives in total.
+Available electives include:
+- CS3001 Machine Learning
+- CS3002 Cloud Computing
+- CS3003 Cyber Security
+- CS3004 Data Mining and Data Warehousing
+- CS3005 Internet of Things
+- CS3006 Natural Language Processing
+- CS3007 Blockchain Technology
+- CS3008 Computer Vision
+
+7. PROJECT WORK
+The Minor Project is undertaken in the sixth semester and carries 4 credits.
+The Major Project is undertaken across the seventh and eighth semesters and
+carries 8 credits. The Summer Internship after the sixth semester carries
+4 credits and requires a minimum duration of six weeks.
+
+8. CGPA CALCULATION
+CGPA is the weighted average of grade points across all completed semesters,
+weighted by the credits of each course. The percentage equivalent of CGPA
+is obtained by multiplying the CGPA by 9.5.
